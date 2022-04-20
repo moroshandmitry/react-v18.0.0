@@ -1,2 +1,2 @@
-# react-v18.0.0
+# react-18
 Created with CodeSandbox
