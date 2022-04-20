@@ -1,6 +1,6 @@
 # react-18
 
-# Use lick bellow
+# Use link below
 
 https://codesandbox.io/s/github/moroshandmitry/react-v18.0.0
 
