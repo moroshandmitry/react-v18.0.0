@@ -1,4 +1,5 @@
 import {
+  useMemo,
   useState,
   useTransition
   // useDeferredValue
@@ -13,9 +14,9 @@ export default function ConcurrentExample() {
   const [value, setValue] = useState("");
   // const deferredValue = useDeferredValue(value, { timeoutMs: 2000 });
 
-  const filtredItems = fakeArrayItems.filter(
+  const filtredItems = useMemo(() => fakeArrayItems.filter(
     (item) => item.toLowerCase().includes(value) // deferredValue
-  );
+  ), [value]);
 
   console.log("render ConcurrentExample");
 
